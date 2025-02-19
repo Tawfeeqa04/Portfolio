@@ -17,6 +17,7 @@
 	
 	
 	<title>Tawfeeqa Afrin</title>
+	<link style="border-radius:50%" rel="icon" type="image/x-icon" href="welcome-banner.jpg">
 	<link rel="stylesheet" href="style.css">
 	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -27,21 +28,48 @@
 		<div class="nav1">
 	    <a href="#section1" class="inttro" style="padding-top: 10px;">Tawfeeqa Afrin..,</a>
 	    </div>
-	    <div class="nav2">
-	    	<a href="#section1" class="active">Home</a>
-			<a href="#section2">Projects</a>
-	    	<a href="#section3">Internship</a>
-	    	<a href="#section4">Education</a>
-			<a href="#section5">Skills</a>
-	    	<a href="#section6">Contact</a>
-	    </div>
+	    <div class="nav2" id="menuList">
+		<ul class="sidebar">
+			<li onclick=hideSidebar() class="closeicon"><a href="#"><i class='bx bx-window-close'></i></a></li>
+	    	<li onclick=hideSidebar()><a href="#section1">Home</a></li>
+			<li onclick=hideSidebar()><a href="#section2">Projects</a></li>
+	    	<li onclick=hideSidebar()><a href="#section3">Internship</a></li>
+	    	<li onclick=hideSidebar()><a href="#section4">Education</a></li>
+			<li onclick=hideSidebar()><a href="#section5">Skills</a></li>
+	    	<li onclick=hideSidebar()><a href="#section6">Contact</a></li>
+			
+		</ul>
+		<ul class="navbar">
+	    	<li class="hideOnMobile"><a href="#section1">Home</a></li>
+			<li class="hideOnMobile"><a href="#section2">Projects</a></li>
+	    	<li class="hideOnMobile"><a href="#section3">Internship</a></li>
+	    	<li class="hideOnMobile"><a href="#section4">Education</a></li>
+			<li class="hideOnMobile"><a href="#section5">Skills</a></li>
+	    	<li class="hideOnMobile"><a href="#section6">Contact</a></li>
+			
+			<li onclick=showSidebar() class="menu-button"><a href="#"><i class='bx bx-menu-alt-right'></i></a></li>
+		</ul>
+		</div>
+	    
+		
+		<!-- <label for="check" class="menu-icon"><i class='bx bx-menu-alt-right' style="color:#2E073F; font-size: 40px;" ></i></label> -->
 		<div class="nav3" style="font-size: large;">
-			<a class="button" href="https://drive.google.com/file/d/1jpp20A7YAnnUATwHNx6YFfG8f4aFm5eL/view?usp=sharing">Resume</a>
+			<a class="button" href="https://drive.google.com/file/d/1vnkDxCPGsplvhQt9y9ZRgx7tvcEPXWjg/view?usp=sharing" target="_blank">Resume</a>
 		</div>
 	</nav>
+	<script>
+		function showSidebar(){
+			const sidebar=document.querySelector('.sidebar')
+			sidebar.style.display='flex'
+		}
+		function hideSidebar(){
+			const sidebar=document.querySelector('.sidebar')
+			sidebar.style.display='none'
+		}
 
+	</script>
 
-	<div cla	ss="containers">
+	<div class="containers">
 		<!--Name section-->
 	<div class="container1" id="section1"> 
 		<div class="name-container1">
@@ -49,16 +77,12 @@
 			<h1>Tawfeeqa Afrin </h1>
 			
 				<h3>I am a <span class="statictext"></span></h3> 
-				<!-- <ul class="dynamic-text">
-					<li><span>Junior Software Developer</span></li>
-					<li><span>UI/UX Designer</span></li>
-					<li><span>Front End Developer</span></li>
-				</ul> -->
+				
 				<p>I am currently seeking an entry-level opportunity where I can contribute my skills and grow professionally, working on innovative projects that push the boundaries of design and development.</p>
 				<p style="font-weight: bold;">Let’s connect and build something extraordinary together !!!</p>
 				<div class="buttons">
-				<a class="button2">Get in Touch</a>
-				<a class="button" href="https://drive.google.com/file/d/1jpp20A7YAnnUATwHNx6YFfG8f4aFm5eL/view?usp=sharing" target="_blank"> Resume</a>
+				<a class="button2" href="#section6" target="_blank" style="text-decoration: none;">Get in Touch</a>
+				<a class="button" href="https://drive.google.com/file/d/1vnkDxCPGsplvhQt9y9ZRgx7tvcEPXWjg/view?usp=sharing" target="_blank"> Resume</a>
 			</div>
 		</div>
 
@@ -137,7 +161,7 @@
 					</div>
 					<div class="card-content">
 						<a href="https://www.linkedin.com/posts/tawfeeqa-afrin-04-11-2003-p_firebase-loginform-webdevelopment-activity-7248624404828430336-q6O3?utm_source=share&utm_medium=member_desktop" target="_blank" style="text-decoration: none;">
-						<h2>Login Form with Firebase Console</h2>
+						<h2>Login Form with Firebase Console - html,css,JS,firebase</h2>
 					
 						<div class="arrow"><i class='bx bx-chevron-right'></i></div></a>
 					</div>
@@ -149,7 +173,7 @@
 						<img src="Website.png" alt="website-banner">
 					</div>
 					<div class="card-content">
-						<h2>Own Portfolio-Html,Css,Javascript</h2>
+						<h2>Portfolio - Html,Css,Javascript</h2>
 					
 						<div class="arrow"><i class='bx bx-chevron-right'></i></div>
 					</div>
@@ -207,7 +231,7 @@
 				<div class="content-box">
 					<div class="date">
 						<i class='bx bxs-calendar'></i>
-							July 2024-August 2024
+							May 2024 - June 2024
 
 					</div>
 					
@@ -227,7 +251,7 @@
 				<div class="content-box">
 					<div class="date">
 						<i class='bx bxs-calendar'></i>
-							July 2024-August 2024
+							April 2024 - May 2024
 
 					</div>
 					
@@ -246,7 +270,7 @@
 				<div class="content-box">
 					<div class="date">
 						<i class='bx bxs-calendar'></i>
-							July 2024-August 2024
+							June 2023 - July 2023
 
 					</div>
 					
@@ -275,7 +299,7 @@
 				<div class="content-box">
 					<div class="date">
 						<i class='bx bxs-calendar'></i>
-							July 2024-August 2024
+							2021 - Present
 
 					</div>
 					
@@ -297,7 +321,7 @@
 				<div class="content-box">
 					<div class="date">
 						<i class='bx bxs-calendar'></i>
-							July 2024-August 2024
+							2014 - 2021
 
 					</div>
 					
